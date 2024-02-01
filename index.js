@@ -13,9 +13,16 @@
 // Створюємо функцію конструктор Vehicle.
 function Vehicle(brand, model, year, mileage) {
   //  Записуєм в this.brand значення аргументу brand, в this.model значення аргументу model і так далі зі всіми аргументами
+  this.brand = brand;
+  this.model = model;
+  this.year = year;
+  this.mileage = mileage;
 }
 
 // Рядковому представленю Vehicle призначаємо функцію яка повертає рядок: <brand> <model> <year>
+Vehicle.toString() {
+  return brand, model, year;
+};
 
 // valueOf - це метод, який використовується JavaScript для конвертації об'єкта в примітивне значення.
 // Ми перевизначаємо його тут, щоб він повертав this.mileage.
